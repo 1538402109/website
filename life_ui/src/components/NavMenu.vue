@@ -4,8 +4,8 @@
       <div class="grid-content bg-purple">
         <ul class="navList">
           <li v-for="count in 6" >
-            <a href="">
-              <span>这是第{{count}}次循环</span>
+            <a @click="gotoRoute(count)">
+              <span >这是第{{count}}次循环</span>
             </a>
           </li>
         </ul>
@@ -18,6 +18,12 @@
 export default {
   name: "NavMenu",
   methods: {
+    gotoRoute (count) {
+       if(count === 1) {
+         this.$router.push('/circle')
+       }
+
+    }
   }
 }
 </script>
