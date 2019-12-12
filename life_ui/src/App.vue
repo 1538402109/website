@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <el-container v-if="$route.meta.keepAlive">
-        <el-header>
+    <el-container v-if="$route.meta.keepAlive" class="wrapper">
+        <el-header class="header">
             <keep-alive>
                 <!--导航栏-->
-                <header-nav>
-
-                </header-nav>
+              <Header></Header>
             </keep-alive>
         </el-header>
-        <el-container>
-            <el-aside width="250px">
+        <el-container class="main">
+            <el-aside width="20%" style="background-color: gray">
                 <!--侧边栏-->
                 <keep-alive>
-                    <left></left>
+                    <nav-menu></nav-menu>
                 </keep-alive>
             </el-aside>
             <el-main>
@@ -22,11 +20,9 @@
                 </router-view>
             </el-main>
         </el-container>
-        <el-footer>
+        <el-footer class="footer">
             <keep-alive>
-                <footer-nav>
-
-                </footer-nav>
+                <Footer></Footer>
             </keep-alive>
         </el-footer>
     </el-container>
@@ -38,16 +34,16 @@
 </template>
 
 <script>
-import header from './components/Header'
-import left from './components/Left'
-import footer from './components/Footer'
+import Header from '@/components/Header'
+import Footer from './components/Footer'
+import NavMenu from "./components/NavMenu";
 export default {
   name: 'App',
-  comments: {
-    headerNav: header,
-    left: left,
-    footNav: footer
-  }
+    components: {
+      Header,
+      NavMenu,
+      Footer
+    }
 }
 </script>
 
@@ -58,6 +54,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
 }
+.wrapper{display: flex;flex-direction: column;min-height: 100%;}
+.header{flex: 0;}
+.main{flex: 1;padding: 0px;}
+.footer{flex: 0;}
+.el-main {padding: 0px}
+
 </style>
