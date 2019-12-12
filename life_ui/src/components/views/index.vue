@@ -3,6 +3,7 @@
     <el-col :span="24">
       <div class="content_header">1234567</div>
     </el-col>
+    <div class="clear"></div>
     <el-col :span="24">
       <div class="content_top">
         <div class="content_top_left">
@@ -19,6 +20,7 @@
         </div>
       </div>
     </el-col>
+    <div class="clear"></div>
     <el-col :span="24">
       <div class="content_first">
         <div class="topNav">
@@ -54,6 +56,7 @@
         </div>
       </div>
     </el-col>
+    <div class="clear"></div>
     <el-col :span="24">
       <div class="content_first">
         <div class="topNav">
@@ -97,6 +100,7 @@
         </div>
       </div>
     </el-col>
+    <div class="clear"></div>
     <el-col :span="24">
       <div class="content_first">
         <div class="topNav">
@@ -132,6 +136,7 @@
         </div>
       </div>
     </el-col>
+    <div class="clear"></div>
   </el-row>
 </template>
 
@@ -142,5 +147,7 @@
 </script>
 
 <style scoped>
-
+.clear{
+  clear: both;
+}
 </style>

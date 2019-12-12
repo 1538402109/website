@@ -62,8 +62,8 @@ export default {
 }
 .wrapper{display: flex;flex-direction: column;min-height: 100%;}
 .header{flex: 0;}
-.main{flex: 1;padding: 0px;}
-.footer{flex: 0;}
+.main{padding: 0px;}
+.footer{padding: 0px;}
 .el-main {padding: 0px}
 
 </style>
