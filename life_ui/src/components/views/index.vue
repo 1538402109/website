@@ -141,9 +141,14 @@
 </template>
 
 <script>
-    export default {
-        name: "index"
-    }
+export default {
+  name: "index",
+  created() {
+    this.$axios.get('/index').then(response=>{
+      console.log(response)
+    })
+  }
+}
 </script>
 
 <style scoped>

@@ -4,6 +4,9 @@ import Login from '@/components/views/Login'
 import index from '@/components/views/index'
 import circles from '@/components/views/circle'
 import partner from '@/components/views/partner'
+import life from '@/components/views/life'
+import technical from '@/components/views/technical'
+import download from '@/components/views/download'
 
 Vue.use(Router)
 
@@ -40,6 +43,30 @@ export default new Router({
       meta: {
           keepAlive: true
       }
-    }
+    },
+    {
+      path: '/life',
+      name: 'life',
+      component: life,
+      meta: {
+        keepAlive: true
+      }
+    },
+    {
+      path: '/technical',
+      name: 'technical',
+      component: technical,
+      meta: {
+        keepAlive: true
+      }
+    },
+    {
+      path: '/download',
+      name: 'download',
+      component: download,
+      meta: {
+        keepAlive: true
+      }
+    },
   ]
 })

@@ -39,11 +39,11 @@ import Footer from './components/Footer'
 import NavMenu from "./components/NavMenu";
 export default {
   name: 'App',
-    components: {
-      Header,
-      NavMenu,
-      Footer
-    }
+  components: {
+    Header,
+    NavMenu,
+    Footer
+  }
 }
 </script>
 
