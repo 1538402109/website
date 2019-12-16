@@ -64,6 +64,6 @@ export default {
 .header{flex: 0;}
 .main{padding: 0px;}
 .footer{padding: 0px;}
-.el-main {padding: 0px}
+.el-main {padding: 0px 10px}
 
 </style>

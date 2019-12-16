@@ -21,8 +21,7 @@ export default {
       }
   },
   created () {
-    this.$axios.get('/index').then(response => {
-      console.log(response)
+    this.$axios.get('/navMenu').then(response => {
       if (response.data.code === 200 && response.data.data.length > 0) {
         this.menuList = response.data.data
       }
