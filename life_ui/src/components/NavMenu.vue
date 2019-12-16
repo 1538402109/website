@@ -2,11 +2,9 @@
   <el-row>
     <el-col :span="24">
       <div class="grid-content bg-purple">
-        <ul class="navList">
-          <li v-for="count in 6" >
-            <a @click="gotoRoute(count)">
-              <span >这是第{{count}}次循环</span>
-            </a>
+        <ul class="navMenuList">
+          <li v-for="(item,index) in menuList" >
+            <router-link :to="{path:item.url}">{{item.name}}</router-link>
           </li>
         </ul>
       </div>
@@ -17,17 +15,37 @@
 <script>
 export default {
   name: "NavMenu",
+  data () {
+      return {
+          menuList : {},
+      }
+  },
+  created () {
+    this.$axios.get('/index').then(response => {
+      console.log(response)
+      if (response.data.code === 200 && response.data.data.length > 0) {
+        this.menuList = response.data.data
+      }
+     })
+  },
   methods: {
-    gotoRoute (count) {
-       if(count === 1) {
-         this.$router.push('/circle')
-       }
-
-    }
   }
 }
 </script>
 
 <style scoped>
-
+.navMenuList{
+  list-style: none;
+  margin-top: 0px;
+  float:right;
+  padding: 20px;
+  box-shadow: -8px 0px 10px #888888;
+}
+.navMenuList li{
+  padding-bottom: 25px;
+}
+.navMenuList li a {
+  text-decoration: none;
+  color: #666666;
+}
 </style>

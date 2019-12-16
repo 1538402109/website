@@ -1,153 +1,129 @@
 <template>
   <el-row class="commonMain">
-    <el-col :span="24">
-      <div class="content_header">1234567</div>
-    </el-col>
-    <div class="clear"></div>
-    <el-col :span="24">
-      <div class="content_top">
-        <div class="content_top_left">
-          1111
-        </div>
-        <div class="content_top_right">
-          <div class="content_top_right_top">
-            222
-          </div>
-          <div class="content_top_right_bottom">
-            <div class="left"></div>
-            <div class="right"></div>
-          </div>
-        </div>
-      </div>
-    </el-col>
-    <div class="clear"></div>
-    <el-col :span="24">
-      <div class="content_first">
-        <div class="topNav">
-          <div class="left">
-            <span>1111</span>
-            <span>222222</span>
-          </div>
-          <div class="right">
-            <span>3333333</span>
-          </div>
-        </div>
-        <div class="first_body">
-          <div class="left">
-            <div class="top">
-              <div class="images">
-                <img alt="没有图片">
-              </div>
-              <div class="images_explain">
-                <span>2344444444444444444444444444444444444444444444444444444444444444444444</span>
-              </div>
-            </div>
-            <div class="bottom">
-              <div class="images">
-                <img alt="没有图片">
-              </div>
-              <div class="images_explain">
-                <span>2344444444444444444444444444444444444444444444444444444444444444444444</span>
-              </div>
-            </div>
-          </div>
-          <div class="right">
-          </div>
-        </div>
-      </div>
-    </el-col>
-    <div class="clear"></div>
-    <el-col :span="24">
-      <div class="content_first">
-        <div class="topNav">
-          <div class="left">
-            <span>1111</span>
-            <span>222222</span>
-          </div>
-          <div class="right">
-            <span>3333333</span>
-          </div>
-        </div>
-        <div class="second_body">
-          <div class="left">
-            <div class="common">
-              <div class="images">
-                <img alt="没有图片">
-              </div>
-              <div class="images_explain">
-                <span>2344444444444444444444444444444444444444444444444444444444444444444444</span>
-              </div>
-            </div>
-            <div class="common">
-              <div class="images">
-                <img alt="没有图片">
-              </div>
-              <div class="images_explain">
-                <span>2344444444444444444444444444444444444444444444444444444444444444444444</span>
-              </div>
-            </div>
-            <div class="common">
-              <div class="images">
-                <img alt="没有图片">
-              </div>
-              <div class="images_explain">
-                <span>2344444444444444444444444444444444444444444444444444444444444444444444</span>
-              </div>
-            </div>
-          </div>
-          <div class="right">
-          </div>
-        </div>
-      </div>
-    </el-col>
-    <div class="clear"></div>
-    <el-col :span="24">
-      <div class="content_first">
-        <div class="topNav">
-          <div class="left">
-            <span>1111</span>
-            <span>222222</span>
-          </div>
-          <div class="right">
-            <span>3333333</span>
-          </div>
-        </div>
-        <div class="third_body">
-          <div class="left">
-            <div class="commonleft">
-              <div class="imgtopleft">
-                11111111111111
-              </div>
-              <div class="imgbottomleft">
-                222222222222222
-              </div>
-            </div>
-            <div class="imgtopright">
-              <div class="imgtopleft">
-                11111111111111
-              </div>
-              <div class="imgbottomleft">
-                222222222222222
-              </div>
-            </div>
-          </div>
-          <div class="right">
-          </div>
-        </div>
-      </div>
-    </el-col>
-    <div class="clear"></div>
+    <el-row>
+      <el-col :span="24">
+        <div class="content_header">观致人自己的社交平台</div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-row>
+          <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+          <el-col :span="18">
+            <el-row>
+              <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+            </el-row>
+            <el-row>
+              <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+            </el-row>
+            <el-row>
+              <el-col :span="24">
+                <el-row>
+                  <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="12"><div class="grid-content bg-purple-light"></div></el-col>
+                </el-row>
+              </el-col>
+            </el-row>
+          </el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-row>
+          <el-col :span="18"><div class="grid-content bg-purple"></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-row>
+          <el-col :span="18">
+            <el-row>
+              <el-col :span="24">
+                <el-row>
+                  <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
+                  <el-col :span="12">
+                    <el-row>
+                      <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+                    </el-row>
+                    <el-row>
+                      <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+                    </el-row>
+                  </el-col>
+                </el-row>
+              </el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-row>
+          <el-col :span="18"><div class="grid-content bg-purple"></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-row>
+          <el-col :span="18">
+            <el-row>
+              <el-col :span="8">
+                <el-row>
+                  <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+                </el-row>
+                <el-row>
+                  <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+                </el-row>
+                <el-row>
+                  <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+                </el-row>
+                <el-row>
+                  <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+                </el-row>
+              </el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-row>
+          <el-col :span="18"><div class="grid-content bg-purple"></div></el-col>
+          <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
+        <el-row>
+          <el-col :span="8">
+            <el-row>
+              <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="8">
+            <el-row>
+              <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
+            </el-row>
+          </el-col>
+          <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
+        </el-row>
+      </el-col>
+    </el-row>
   </el-row>
 </template>
 
 <script>
 export default {
   name: "index",
-  created() {
-    this.$axios.get('/index').then(response=>{
-      console.log(response)
-    })
-  }
 }
 </script>
 

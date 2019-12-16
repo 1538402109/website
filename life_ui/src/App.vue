@@ -8,7 +8,7 @@
             </keep-alive>
         </el-header>
         <el-container class="main">
-            <el-aside width="20%" style="background-color: gray">
+            <el-aside width="20%">
                 <!--侧边栏-->
                 <keep-alive>
                     <nav-menu></nav-menu>
