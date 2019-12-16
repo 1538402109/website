@@ -9,6 +9,6 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return 1234;
+        return 'test use';
     }
 }
