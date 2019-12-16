@@ -41,7 +41,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // proxy: config.dev.proxyTable,
     proxy: {
       '/api': {
-        target: 'website.api.com',
+        target: 'http://website.api.com',
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/api'
