@@ -17,4 +17,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/index','API\IndexController@index');
+Route::get('/navMenu','API\IndexController@navMenu');
+Route::get('/footer','API\IndexController@footer');
+Route::get('/notice','API\IndexController@notice');
+Route::get('/indexNews','API\IndexController@indexNews');
+Route::get('/CircleNews','API\IndexController@CircleNews');
+Route::get('/PartnerNews','API\IndexController@PartnerNews');
